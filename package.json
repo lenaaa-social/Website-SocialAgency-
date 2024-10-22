@@ -1,0 +1,24 @@
+{
+  "name": "website-socialagency",
+  "version": "1.0.0",
+  "description": "",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "tailwind": "npx tailwindcss -i ./src/input.css -o ./build/css/style.css --watch",
+    "prettier": "npx prettier --write **/*.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lenaaa-social/Website-SocialAgency-.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lenaaa-social/Website-SocialAgency-/issues"
+  },
+  "homepage": "https://github.com/lenaaa-social/Website-SocialAgency-#readme",
+  "devDependencies": {
+    "prettier-plugin-tailwindcss": "^0.6.8"
+  }
+}
