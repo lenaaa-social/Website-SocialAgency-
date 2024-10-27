@@ -5,7 +5,8 @@ module.exports = {
     extend: {
       colors: {
         //Example for new color
-        midnight: '#121063',
+        backBeige: '#F5F5EF',
+        textPrimColor: '#C2B19C',
       }
     },
 
