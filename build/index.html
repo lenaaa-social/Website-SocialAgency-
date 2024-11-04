@@ -1,93 +1,160 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Social Mood</title>
-  <link rel="stylesheet" href="css/style.css" />
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Social Mood</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-<body>
-  <!-- Overlay, das alles außer dem Dropdown-Menü verdunkelt -->
-  <div id="overlay" class="fixed inset-0 bg-black bg-opacity-50 hidden z-10"></div>
+  <body>
+    <!-- Overlay, das alles außer dem Dropdown-Menü verdunkelt -->
+    <div
+      id="overlay"
+      class="fixed inset-0 bg-black bg-opacity-50 hidden z-10"
+    ></div>
 
-  <!-- Navbar -->
-  <nav class="absolute w-full text-white p-4 bg-transparent z-20">
-    <div class="container mx-auto flex justify-center relative space-x-8">
-      <!-- Menü-Links für größere Bildschirme -->
-      <ul id="menu" class="hidden sm:flex space-x-8 w-[80vw] justify-between uppercase tracking-widest text-xl font-bold">
-        <li><a href="#" class="hover:text-gray-400">LEISTUNGEN</a></li>
-        <li><a href="#" class="hover:text-gray-400">ABOUT US</a></li>
-        <li><a href="#" class="hover:text-gray-400">PORTFOLIO</a></li>
-        <li><a href="#" class="hover:text-gray-400">CONTACT</a></li>
-      </ul>
+    <!-- Navbar -->
+    <nav class="absolute w-full text-white p-4 bg-transparent z-20">
+      <div class="container mx-auto flex justify-center relative space-x-8">
+        <!-- Menü-Links für größere Bildschirme -->
+        <ul
+          id="menu"
+          class="hidden sm:flex space-x-8 w-[80vw] justify-between uppercase tracking-widest text-xl font-bold"
+        >
+          <li><a href="#" class="hover:text-gray-400">LEISTUNGEN</a></li>
+          <li><a href="#" class="hover:text-gray-400">ABOUT US</a></li>
+          <li><a href="#" class="hover:text-gray-400">PORTFOLIO</a></li>
+          <li><a href="#" class="hover:text-gray-400">CONTACT</a></li>
+        </ul>
 
-      <!-- Hamburger Icon für kleine Bildschirme -->
-      <button id="mobile-open-button" class="text-3xl sm:hidden focus:outline-none absolute right-0 top-0">&#9776;</button>
-    </div>
-
-    <!-- Dropdown-Menü für kleine Bildschirme -->
-    <div id="dropdown-menu" class="sm:hidden hidden flex flex-col mt-10 space-y-2 text-center bg-backBeige text-textPrimColor p-4 rounded text-2xl z-30">
-      <a href="#" class="tracking-widest hover:text-gray-400">LEISTUNGEN</a>
-      <a href="#" class="tracking-widest hover:text-gray-400">ABOUT US</a>
-      <a href="#" class="tracking-widest hover:text-gray-400">PORTFOLIO</a>
-      <a href="#" class="tracking-widest hover:text-gray-400">CONTACT</a>
-    </div>
-  </nav>
-
-  <div class="bg-cover bg-center h-[50vh] sm:h-screen flex items-center justify-center" style="background-image: url('img/background.jpeg');">
-    <img src="img/logo.png" class="mx-auto">
-  </div>
-
-  <div class="h-auto xl:h-screen bg-backBeige px-4 lg:px-24 py-8 flex flex-col space-y-8">
-    <!-- Überschrift in einer eigenen Row mit beschränkter Breite -->
-    <div class="w-full lg:w-1/2">
-      <h1 class="text-6xl text-textPrimColor leading-tight font-bold">
-        We shape your brand’s <span class="italic">mood</span> online!
-      </h1>
-    </div>
-  
-    <!-- Bild und Text in einer weiteren Row -->
-    <div class="flex flex-col lg:flex-row gap-8 items-start xl:items-center">
-      <!-- Bild -->
-      <div class="w-full lg:w-1/2 max-h-[500px] overflow-hidden rounded-lg shadow-lg">
-        <img src="img/s.jpg" class="w-full h-full object-cover">
+        <!-- Hamburger Icon für kleine Bildschirme -->
+        <button
+          id="mobile-open-button"
+          class="text-3xl sm:hidden focus:outline-none absolute right-0 top-0"
+        >
+          &#9776;
+        </button>
       </div>
-  
-      <!-- Text -->
-      <div class="w-full lg:w-1/2 flex items-center">
-        <p class="text-textPrimColor leading-relaxed lg:leading-loose text-lg lg:text-xl">
-          Bei socialmood geht es darum, deine Marke in den sozialen Medien authentisch und auf den Punkt zu zeigen. Wir setzen auf eine minimalistische Ästhetik und eine individuelle, ganzheitliche Betreuung, um deine Social Media Präsenz exakt auf deine Bedürfnisse abzustimmen. Unser Team ist jung, dynamisch und versteht, dass moderne Kommunikation mehr ist als Werbung. Gemeinsam entwickeln wir Strategien, gestalten Inhalte und pflegen deine Community – immer mit einem Blick fürs Ganze und einem Gespür für das, was wirklich zu dir passt.
-        </p>
+
+      <!-- Dropdown-Menü für kleine Bildschirme -->
+      <div
+        id="dropdown-menu"
+        class="sm:hidden hidden flex flex-col mt-10 space-y-2 text-center bg-backBeige text-textPrimColor p-4 rounded text-2xl z-30"
+      >
+        <a href="#" class="tracking-widest hover:text-gray-400">LEISTUNGEN</a>
+        <a href="#" class="tracking-widest hover:text-gray-400">ABOUT US</a>
+        <a href="#" class="tracking-widest hover:text-gray-400">PORTFOLIO</a>
+        <a href="#" class="tracking-widest hover:text-gray-400">CONTACT</a>
+      </div>
+    </nav>
+
+    <div
+      class="bg-cover bg-center h-[50vh] sm:h-screen flex items-center justify-center"
+      style="background-image: url(&quot;img/background.jpeg&quot;)"
+    >
+      <img src="img/logo.png" class="mx-auto" />
+    </div>
+
+    <div
+      class="h-auto xl:h-screen bg-backBeige px-4 lg:px-24 py-8 flex flex-col space-y-8"
+    >
+      <!-- Überschrift in einer eigenen Row mit beschränkter Breite -->
+      <div class="w-full lg:w-1/2">
+        <h1 class="text-6xl text-textPrimColor leading-tight font-bold">
+          We shape your brand’s <span class="italic">mood</span> online!
+        </h1>
+      </div>
+
+      <!-- Bild und Text in einer weiteren Row -->
+      <div class="flex flex-col lg:flex-row gap-8 items-start xl:items-center">
+        <!-- Bild -->
+        <div
+          class="w-full lg:w-1/2 max-h-[500px] overflow-hidden rounded-lg shadow-lg"
+        >
+          <img src="img/s.jpg" class="w-full h-full object-cover" />
+        </div>
+
+        <!-- Text -->
+        <div class="w-full lg:w-1/2 flex items-center">
+          <p
+            class="text-textPrimColor leading-relaxed lg:leading-loose text-lg lg:text-xl"
+          >
+            Bei socialmood geht es darum, deine Marke in den sozialen Medien
+            authentisch und auf den Punkt zu zeigen. Wir setzen auf eine
+            minimalistische Ästhetik und eine individuelle, ganzheitliche
+            Betreuung, um deine Social Media Präsenz exakt auf deine Bedürfnisse
+            abzustimmen. Unser Team ist jung, dynamisch und versteht, dass
+            moderne Kommunikation mehr ist als Werbung. Gemeinsam entwickeln wir
+            Strategien, gestalten Inhalte und pflegen deine Community – immer
+            mit einem Blick fürs Ganze und einem Gespür für das, was wirklich zu
+            dir passt.
+          </p>
+        </div>
       </div>
     </div>
-  </div>
 
-  <!-- JavaScript for toggle functionality and overlay -->
-  <script>
-    const mobileOpenButton = document.getElementById('mobile-open-button');
-    const dropdownMenu = document.getElementById('dropdown-menu');
-    const overlay = document.getElementById('overlay');
+    <div class="h-auto lg:h-screen w-full bg-backBeige p-4 lg:p-24 flex flex-col justify-center">
+      <h1 class="text-textPrimColor text-6xl font-bold leading-tight">Leistungen</h1>
+      <div class="flex items-center justify-center h-full mt-8">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mx-auto mt-8">
+        
+          <!-- Social Media Management Box -->
+          <a href="#social-media-management" class="group relative block overflow-hidden rounded-lg">
+            <img src="img/social-media-mngmt-bg.jpeg" alt="Social Media Management" class="w-full aspect-square object-cover">
+            <div class="absolute inset-0 bg-white opacity-30 group-hover:opacity-50 transition"></div>
+            <span class="absolute inset-0 flex items-center justify-center text-black font-bold text-2xl text-center">Social Media Management</span>
+          </a>
+          
+          <!-- Content Gestaltung Box -->
+          <a href="#content-gestaltung" class="group relative block overflow-hidden rounded-lg">
+            <img src="img/content-gestaltung-bg.jpeg" alt="Content Gestaltung" class="w-full aspect-square object-cover">
+            <div class="absolute inset-0 bg-white opacity-30 group-hover:opacity-50 transition"></div>
+            <span class="absolute inset-0 flex items-center justify-center text-black font-bold text-2xl text-center">Content Gestaltung</span>
+          </a>
+          
+          <!-- Strategieentwicklung Box -->
+          <a href="#strategieentwicklung" class="group relative block overflow-hidden rounded-lg">
+            <img src="img/strategie-entwicklung-bg.jpeg" alt="Strategieentwicklung" class="w-full aspect-square object-cover">
+            <div class="absolute inset-0 bg-white opacity-30 group-hover:opacity-50 transition"></div>
+            <span class="absolute inset-0 flex items-center justify-center text-black font-bold text-2xl text-center">Strategieentwicklung</span>
+          </a>
+          
+          <!-- Content Creation Box -->
+          <a href="#content-creation" class="group relative block overflow-hidden rounded-lg">
+            <img src="img/content-creation-bg.jpeg" alt="Content Creation" class="w-full aspect-square object-cover">
+            <div class="absolute inset-0 bg-white opacity-30 group-hover:opacity-50 transition"></div>
+            <span class="absolute inset-0 flex items-center justify-center text-black font-bold text-2xl Text-center">Content Creation</span>
+          </a>
+    
+        </div>
+      </div>
+    </div>
+    <!-- JavaScript for toggle functionality and overlay -->
+    <script>
+      const mobileOpenButton = document.getElementById("mobile-open-button");
+      const dropdownMenu = document.getElementById("dropdown-menu");
+      const overlay = document.getElementById("overlay");
 
-    mobileOpenButton.addEventListener('click', () => {
-      dropdownMenu.classList.toggle('hidden');
-      overlay.classList.toggle('hidden');
-    });
+      mobileOpenButton.addEventListener("click", () => {
+        dropdownMenu.classList.toggle("hidden");
+        overlay.classList.toggle("hidden");
+      });
 
-    // Overlay schließen, wenn es angeklickt wird
-    overlay.addEventListener('click', () => {
-      dropdownMenu.classList.add('hidden');
-      overlay.classList.add('hidden');
-    });
+      // Overlay schließen, wenn es angeklickt wird
+      overlay.addEventListener("click", () => {
+        dropdownMenu.classList.add("hidden");
+        overlay.classList.add("hidden");
+      });
 
-    // Menü und Overlay schließen beim Scrollen
-    window.addEventListener('scroll', () => {
-      if (!dropdownMenu.classList.contains('hidden')) {
-        dropdownMenu.classList.add('hidden');
-        overlay.classList.add('hidden');
-      }
-    });
-  </script>
-</body>
+      // Menü und Overlay schließen beim Scrollen
+      window.addEventListener("scroll", () => {
+        if (!dropdownMenu.classList.contains("hidden")) {
+          dropdownMenu.classList.add("hidden");
+          overlay.classList.add("hidden");
+        }
+      });
+    </script>
+  </body>
 </html>
