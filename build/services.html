@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Leistungen</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <!-- Overlay, das alles außer dem Dropdown-Menü verdunkelt -->
+    <div
+      id="overlay"
+      class="fixed inset-0 bg-black bg-opacity-50 hidden z-10"
+    ></div>
+
+    <!-- Navbar -->
+    <nav class="absolute w-full text-black p-4 bg-transparent z-20">
+      <div class="container mx-auto flex justify-center relative space-x-8">
+        <!-- Menü-Links für größere Bildschirme -->
+        <ul
+          id="menu"
+          class="hidden sm:flex space-x-8 w-[80vw] justify-between uppercase tracking-widest text-2xl font-bold"
+        >
+          <li><a href="index.html" class="hover:text-white">Home</a></li>
+          <li><a href="leistungen.html" class="hover:text-white">About Us</a></li>
+          <li><a href="about.html" class="hover:text-white">Portfolio</a></li>
+          <li><a href="contact.html" class="hover:text-white">Contact</a></li>
+        </ul>
+
+        <!-- Hamburger Icon für kleine Bildschirme -->
+        <button
+          id="mobile-open-button"
+          class="text-3xl sm:hidden focus:outline-none absolute right-0 top-0"
+        >
+          &#9776;
+        </button>
+      </div>
+
+      <!-- Dropdown-Menü für kleine Bildschirme -->
+      <div
+        id="dropdown-menu"
+        class="sm:hidden hidden flex flex-col mt-10 space-y-2 text-center bg-backBeige text-textPrimColor p-4 rounded text-2xl z-30"
+      >
+        <a href="index.html" class="tracking-widest hover:text-gray-400">Home</a>
+        <a href="leistungen.html" class="tracking-widest hover:text-gray-400">About Us</a>
+        <a href="about.html" class="tracking-widest hover:text-gray-400">Portfolio</a>
+        <a href="contact.html" class="tracking-widest hover:text-gray-400">Contact</a>
+      </div>
+    </nav>
+
+    <!-- Hauptinhalt-->
+    <div
+    class="bg-cover bg-center h-[80vh] sm:h-screen flex items-center justify-center relative"
+    style="background-image: url('img/discoball.jpg');"
+  >
+    <!-- Überschrift zentriert -->
+    <h1 class="text-5xl md:text-8xl font-serif font-semibold tracking-wide text-black mb-16 sm:mb-0">
+      What we do
+    </h1>
+    
+    <!-- Untertitel in der rechten unteren Ecke -->
+    <p class="absolute bottom-24 sm:bottom-52 right-10 text-sm md:text-xl italic text-black font-mono tracking-tighter transform rotate-[-10deg]">
+      We want to tell stories that inspire, <br>move, and leave a lasting impression.
+    </p>
+  </div>
+
+
+
+
+
+<!-- Section 1. Social Media Management-->
+<div class="bg-backBeige flex flex-col xl:flex-row items-center p-4 xl:p-12 xl:h-screen">
+  <!-- Linke Spalte für Bild und Rahmen -->
+  <div class="relative w-full xl:w-1/2 h-[50vh] sm:h-[60vh] xl:h-[100%] flex items-start justify-start xl:justify-center xl:items-center mb-8 xl:mb-0">
+    <!-- Rahmen oben rechts in der linken Spalte -->
+    <div class="absolute top-6 right-6 xl:top-6 xl:right-12 h-[80%] w-[75%] xl:w-[75%] xl:h-[80%] border-[3.5px] border-black transform z-10"></div>
+    
+    <!-- Bild unten links in der linken Spalte -->
+    <img src="img/socialmedia-mngmt.jpg" alt="Bild" class="absolute bottom-6 left-6 xl:w-[75%] xl:h-[80%] w-[75%] h-[80%] xl:bottom-16 xl:left-16 object-cover">
+  </div>
+
+  <!-- Rechte Spalte für den Textbereich -->
+  <div class="w-full xl:w-1/2 p-4 xl:p-12">
+    <h2 class="text-4xl xl:text-6xl font-bold text-black mb-4">Social Media Management</h2>
+    <p class="text-lg text-gray-800 mb-4">
+      Wir übernehmen alles rund um deine Content-Strategie – von der Ideenfindung bis zur Umsetzung und Analyse
+    </p>
+    <ul class="text-lg text-gray-800 space-y-2">
+      <li><strong>Strategieentwicklung</strong> – Eine maßgeschneiderte Strategie, die deine Marke oder Person stärkt und deine Zielgruppe erreicht</li>
+      <li><strong>Contenterstellung</strong> – Kreative und zielgerichtete Inhalte für deine Botschaft</li>
+      <li><strong>Redaktionsplan</strong> – Ein übersichtlicher Plan, der alle Inhalte und Veröffentlichungen effizient strukturiert</li>
+      <li><strong>Analyse & Reporting</strong> – Regelmäßige Contentanalyse und Optimierung</li>
+      <li><strong>Community Management</strong> – Aufbau und Pflege deiner Community für nachhaltiges Wachstum und stärkere Kundenbindung</li>
+      <li><strong>1:1 Calls</strong> – Monatliche Calls zur Content Abstimmung</li>
+    </ul>
+  </div>
+</div>
+
+
+
+
+
+  <!-- Section 2. Content Gestaltung -->
+<div class="bg-backBeige flex flex-col-reverse xl:flex-row items-center p-4 xl:p-12 xl:h-screen">
+  <!-- Linke Spalte für Text -->
+  <div class="w-full xl:w-1/2 p-4 xl:p-12">
+    <h2 class="text-4xl xl:text-6xl font-bold text-black mb-4">Content Gestaltung</h2>
+    <p class="text-lg text-gray-800 mb-4">
+      Du möchtest deinen Account selbst managen, brauchst aber noch Unterstützung beim Aufbau? Kein Problem – wir helfen dir mit der Entwicklung eines digitalen Designkonzeptes.
+    </p>
+    <ul class="text-lg text-gray-800 space-y-2">
+      <li><strong>Individuell anpassbare Canva-Vorlagen</strong> – Für einfachen und kreativen Content, den du selbstständig weiterentwickeln kannst</li>
+      <li><strong>Highlight-Cover</strong> – Professionelle und aufeinander abgestimmte Designs für deine Story-Highlights</li>
+      <li><strong>SEO optimierte Biografie </strong> – Damit dein Profil bei deiner Zielgruppe optimal sichtbar ist</li>
+      <li>Zusätzlich bieten wir eine kurze Einführung in Best Practices für deinen Social Media-Auftritt, inklusive Tipps und Tricks und spannende Tools. So bist du bestens aufgestellt, um deinen Account selbstbewusst und erfolgreich zu betreuen.</li>
+    </ul>
+  </div>
+
+  <!-- Rechte Spalte für Bild und Rahmen -->
+  <div class="relative w-full xl:w-1/2 h-[50vh] sm:h-[60vh] xl:h-[100%] flex items-start justify-start xl:justify-center xl:items-center mb-8 xl:mb-0">
+    <!-- Rahmen oben rechts in der linken Spalte -->
+    <div class="absolute top-6 left-6 xl:top-6 xl:left-12 h-[80%] w-[75%] xl:w-[75%] xl:h-[80%] border-[3.5px] border-black transform z-0"></div>
+    
+    <!-- Bild unten links in der linken Spalte -->
+    <img src="img/content-gestaltung.jpg" alt="Bild" class="absolute bottom-6 right-6 w-[75%] h-[80%] xl:bottom-16 xl:right-16 object-cover">
+  </div>
+</div>
+
+<!-- Section 3: Strategie-Entwicklung -->
+<div class="bg-backBeige flex flex-col xl:flex-row items-center p-4 xl:p-12 xl:h-screen">
+  <!-- Linke Spalte für Bild und Rahmen -->
+  <div class="relative w-full xl:w-1/2 h-[50vh] sm:h-[60vh] xl:h-[100%] flex items-start justify-start xl:justify-center xl:items-center mb-8 xl:mb-0">
+    <!-- Rahmen oben rechts in der linken Spalte -->
+    <div class="absolute bottom-6 right-6 xl:bottom-6 xl:right-12 h-[80%] w-[75%] xl:w-[75%] xl:h-[80%] border-[3.5px] border-black transform z-0"></div>
+    
+    <!-- Bild unten links in der linken Spalte -->
+    <img src="img/strategie-entwicklung.jpg" alt="Bild" class="absolute top-6 left-6 w-[75%] h-[80%] xl:top-16 xl:left-16 object-cover">
+  </div>
+
+  <!-- Rechte Spalte für den Textbereich -->
+  <div class="w-full xl:w-1/2 p-4 xl:p-12">
+    <h2 class="text-4xl xl:text-6xl font-bold text-black mb-4">Strategie Entwicklung</h2>
+    <p class="text-lg text-gray-800 mb-4">
+      In individuellen 1:1 Coachings entwickeln wir zusammen für dich eine individuelle Strategie und maßgeschneiderte Content-Ideen. In diesen Sessions kannst du alles lernen was du brauchst, Fragen stellen und wertvolle Einblicke gewinnen, damit du erfolgreich durchstarten kannst.
+    </p>
+    <ul class="text-lg text-gray-800 space-y-2">
+      <li><strong>Analyse deines bisherigen Contents </strong> – Wir identifizieren Stärken und Optimierungspotenziale.</li>
+      <li><strong>Gemeinsames Brainstorming</strong> – Kreative Ideenfindung, die auf deine Marke und Ziele abgestimmt ist.</li>
+      <li><strong>Strategieentwicklung</strong> – Wir erstellen einen konkreten Plan, der auf deine Bedürfnisse zugeschnitten ist.</li>
+      <li><strong>Beantwortung deiner Fragen </strong> – Wir stehen dir zur Seite und klären alle offenen Punkte, damit du bestens vorbereitet bist.</li>
+      <li><strong>Praktische Tipps und Tools </strong> – Wir zeigen dir hilfreiche Werkzeuge und Techniken, die dir die Umsetzung erleichtern.</li>
+    </ul>
+  </div>
+</div>
+
+<!-- Section 4. Content Creation -->
+<div class="bg-backBeige flex flex-col-reverse xl:flex-row items-center p-4 xl:p-12 xl:h-screen">
+  <!-- Linke Spalte für Text -->
+  <div class="w-full xl:w-1/2 p-4 xl:p-12">
+    <h2 class="text-4xl xl:text-6xl font-bold text-black mb-4">Content Creation</h2>
+    <p class="text-lg text-gray-800 mb-4">
+      Möchtest du deinen Content selbst betreuen und suchst nur Unterstützung für beeindruckende Fotos und Videos? Kein Problem! Wir kreieren maßgeschneiderten Content, der perfekt zu dir, deinen Dienstleistungen oder deinen Produkten passt.
+    </p>
+    <ul class="text-lg text-gray-800 space-y-2">
+      <li><strong>Vor-Ort-Shooting</strong> – Wir kommen zu dir und setzen dich oder deine Produkte optimal in Szene.</li>
+      <li><strong>Professionelle Fotos</strong> – Hochwertige Bilder, die deine Marke authentisch und ansprechend präsentieren.</li>
+      <li><strong>Bearbeitete Videos</strong> – Kurzvideos und Clips, die deine Botschaft lebendig und fesselnd vermitteln und welche du zur Weiterverarbeitung nutzen kannst</li>
+    </ul>
+  </div>
+
+  <!-- Rechte Spalte für Bild und Rahmen -->
+  <div class="relative w-full xl:w-1/2 h-[50vh] sm:h-[60vh] xl:h-[100%] flex items-start justify-start xl:justify-center xl:items-center mb-8 xl:mb-0">
+    <!-- Rahmen oben rechts in der linken Spalte -->
+    <div class="absolute bottom-6 left-6 xl:bottom-6 xl:left-12 h-[80%] w-[75%] xl:w-[75%] xl:h-[80%] border-[3.5px] border-black transform z-10"></div>
+    
+    <!-- Bild unten links in der linken Spalte -->
+    <img src="img/content-creation.jpeg" alt="Bild" class="absolute top-6 right-6 w-[75%] h-[80%] xl:top-16 xl:right-16 object-cover">
+  </div>
+</div>
+
+
+      <div class="relative h-[60vh] sm:h-screen bg-cover bg-center flex items-end p-4 sm:p-24" style="background-image: url('img/discokugel2.jpg');">
+        <!-- Textbereich -->
+        <p class="text-xl md:text-3xl font-bold text-black max-w-4xl" style="line-height: 2.6rem;">
+          EGAL, OB DU NACH KREATIVEN INFLUENCER-KAMPAGNEN FÜR DEIN PRODUKT SUCHST, NEUE TALENTE INS TEAM HOLEN MÖCHTEST ODER DEINEN BRAND IM SOCIAL MEDIA-BEREICH AUFPEPPEN WILLST, HIT US UP!
+          LASS UNS GEMEINSAM BRAINSTORMEN UND DEINE VISION ZUM LEBEN ERWECKEN.
+        </p>
+      </div>
+
+
+    <!-- JavaScript für die Navigation -->
+    <script src="main.js"></script>
+  </body>
+</html>
