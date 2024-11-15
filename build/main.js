@@ -23,3 +23,39 @@ window.addEventListener("scroll", () => {
     overlay.classList.add("hidden");
   }
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("slide-in");
+          observer.unobserve(entry.target); // Stoppe das Beobachten, um die Animation nur einmal abzuspielen
+        }
+      });
+    },
+    { threshold: 0.7 } // Schwellenwert für Auslösung
+  );
+
+  // Alle Elemente mit der Klasse "animated-content" auswählen
+  const animatedElements = document.querySelectorAll(".animated-slide-in");
+  animatedElements.forEach((el) => observer.observe(el));
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("appear");
+          observer.unobserve(entry.target); // Stoppe das Beobachten, um die Animation nur einmal abzuspielen
+        }
+      });
+    },
+    { threshold: 0.7 } // Schwellenwert für Auslösung
+  );
+
+  // Alle Elemente mit der Klasse "animated-content" auswählen
+  const animatedElements = document.querySelectorAll(".animated-appear");
+  animatedElements.forEach((el) => observer.observe(el));
+});
