@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <!-- Overlay, das alles außer dem Dropdown-Menü verdunkelt -->
+    <div
+      id="overlay"
+      class="fixed inset-0 bg-black bg-opacity-50 hidden z-10"
+    ></div>
+
+    <!-- Navbar -->
+    <nav class="absolute w-full text-black p-4 bg-transparent z-20">
+      <div class="container mx-auto flex justify-center relative space-x-8">
+        <!-- Menü-Links für größere Bildschirme -->
+        <ul
+          id="menu"
+          class="hidden sm:flex space-x-8 w-[80vw] justify-between uppercase tracking-widest text-2xl font-bold"
+        >
+          <li><a href="index.html" class="hover:text-white">Home</a></li>
+          <li><a href="services.html" class="hover:text-white">Leistungen</a></li>
+          <li><a href="portfolio.html" class="hover:text-white">Portfolio</a></li>
+          <li><a href="contact.html" class="hover:text-white">Kontakt</a></li>
+        </ul>
+
+        <!-- Hamburger Icon für kleine Bildschirme -->
+        <button
+          id="mobile-open-button"
+          class="text-3xl sm:hidden focus:outline-none absolute right-0 top-0"
+        >
+          &#9776;
+        </button>
+      </div>
+
+      <!-- Dropdown-Menü für kleine Bildschirme -->
+      <div
+        id="dropdown-menu"
+        class="sm:hidden hidden flex flex-col mt-10 space-y-2 text-center bg-backBeige text-textPrimColor p-4 rounded text-2xl z-30"
+      >
+        <a href="index.html" class="tracking-widest hover:text-gray-400">Home</a>
+        <a href="services.html" class="hover:text-white">Leistungen</a>
+        <a href="portfolio.html" class="tracking-widest hover:text-gray-400">Portfolio</a>
+        <a href="contact.html" class="tracking-widest hover:text-gray-400">Kontakt</a>
+      </div>
+    </nav>
+
+    <!-- Hauptinhalt-->
+    <div
+    class="bg-cover bg-center h-[80vh] sm:h-screen flex items-center justify-center relative"
+    style="background-image: url('img/discoball.jpg');"
+  >
+    <!-- Überschrift zentriert -->
+    <h1 class="text-5xl md:text-8xl font-serif font-semibold tracking-wide text-black mb-16 sm:mb-0">
+      About Us
+    </h1>
+    
+    <!-- Untertitel in der rechten unteren Ecke -->
+  </div>
+
+
+    <!-- JavaScript für die Navigation -->
+    <script src="main.js"></script>
+  </body>
+</html>
