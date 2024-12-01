@@ -54,19 +54,201 @@
 
     <!-- Hauptinhalt-->
     <div
-    class="bg-cover bg-center h-[80vh] sm:h-screen flex items-center justify-center relative"
-    style="background-image: url('img/discoball.jpg');"
+    class="bg-backBeige h-[50vh] sm:h-screen flex items-center justify-center relative"
   >
     <!-- Überschrift zentriert -->
-    <h1 class="text-5xl md:text-8xl font-serif font-semibold tracking-wide text-black mb-16 sm:mb-0">
-      About Us
-    </h1>
+    <img src="img/about-us-startingpage.jpeg" alt="Bild" class="pt-4">
     
     <!-- Untertitel in der rechten unteren Ecke -->
   </div>
 
+  <div class="flex flex-col xl:flex-row items-center sm:h-screen bg-backBeige">
+    <!-- Linke Spalte für den Text -->
+    <div class="w-full xl:w-1/2 flex flex-col justify-center items-center px-4 sm:px-12 space-y-8">
+      <!-- Abschnitt 1 -->
+      <div class="">
+        <h2 class="text-4xl font-serif font-light mb-4 text-center">WHO WE ARE</h2>
+        <p class="text-base text-start leading-relaxed text-gray-700 italic">
+          Socialmood ist eine dynamische, junge Social-Media-Agentur mit einem klaren Ziel: authentische und individuelle Markenpräsenz in den sozialen Medien zu schaffen.
+          Als Teil der <em>Gen Z</em> verstehen wir die Trends, Werte und Bedürfnisse der digitalen Welt wie keine andere Generation. Mit <strong>hochwertigem Content</strong>, 
+          <strong>kreativem Design</strong> und <strong>Strategien</strong> heben wir deine Marke auf das nächste Level, denn wir glauben daran, dass jede Marke ihre eigene 
+          Sprache spricht und wollen, diese Stimme in der digitalen Welt <em>einzigartig</em> und unverwechselbar zu präsentieren.
+        </p>
+      </div>
+  
+      <!-- Abschnitt 2 -->
+      <div class="">
+        <h2 class="text-center text-4xl font-serif font-light mb-4">WHO WE WORK WITH</h2>
+        <p class="text-base text-start leading-relaxed text-gray-700 italic">
+          Wir arbeiten mit visionären Marken und Unternehmer*innen, die Social Media als strategisches Werkzeug nutzen und ihre 
+          <strong>digitale Identität</strong> authentisch und innovativ gestalten wollen – von Startups bis zu etablierten Unternehmen.
+          Wir lieben es, mit all jenen zusammenzuarbeiten, die <strong>mutig denken</strong>, innovative Ideen haben und ihre Markenidentität 
+          <em>authentisch</em> in den digitalen Raum tragen wollen.
+        </p>
+      </div>
+  
+      <!-- Abschnitt 3 -->
+      <div class="">
+        <h2 class="text-center text-4xl font-serif font-light mb-4">WHAT WE DO DIFFERENTLY</h2>
+        <p class="text-base text-start leading-relaxed text-gray-700 italic">
+          Wir vereinen Design, Strategie und Content Creation in einem <em>ganzheitlichen Ansatz</em>. Statt bloßer Sichtbarkeit schaffen wir 
+          Markenstorys, die begeistern, verbinden und nachhaltig Eindruck hinterlassen – durch kreative Inhalte und Strategien, die wirklich den 
+          Unterschied machen. Für uns ist Erfolg online mehr als nur das bloße „Da sein“ – es braucht <strong>Persönlichkeit</strong> und 
+          <strong>Präzision</strong> – wir möchten, dass deine Marke eine Story erzählt, die begeistert und sich tief verankert.
+        </p>
+      </div>
+    </div>
+  
+    <!-- Rechte Spalte für das Bild -->
+    <div class="w-full xl:w-1/2 h-[50vh] pt-4 sm:pt-0 sm:h-screen xl:h-full">
+      <img src="img/about-us-hand.jpeg" alt="Hand with documents" class="w-full h-full object-cover">
+    </div>
+  </div>
 
+
+
+  <div class="flex flex-col h-screen bg-[#d1bfa9]">
+    <!-- Oberer Balken -->
+    <div class="h-1/6 bg-backBeige flex items-center justify-center">
+      <h1 class="text-4xl font-serif font-light text-center">OUR FAVORITE THINGS</h1>
+    </div>
+  
+    <!-- Mittlerer Balken mit Karussell -->
+    <div class="h-5/6 md:h-4/6 bg-[#d1bfa9] flex items-center justify-center">
+      <!-- Pfeil links -->
+      <button id="prev-slide" class="hidden md:block absolute left-4 xl:left-16 text-4xl text-black hover:text-gray-700">
+        <img src="img/arrow.png" alt="Next Slide" class="w-16 h-6 transform rotate-180">
+      </button>
+  
+      <!-- Karussell-Inhalt -->
+      <div id="carousel" class="flex items-center w-full xl:w-2/3 overflow-hidden h-[600px] md:h-full">
+        <!-- Folie 1 -->
+        <div class="carousel-slide flex flex-col md:flex-row w-full items-center md:justify-between gap-y-4 md:gap-x-12 h-full">
+          <!-- Linker Text -->
+          <div class="w-full md:w-2/3 px-4 text-center">
+            <h2 class="pt-4 text-2xl md:text-4xl font-mono text-center font-extralight  leading-relaxed tracking-[.15em]">
+              GOOD VIBES - ZUSAMMENARBEIT IMMER AUF AUGENHÖHE
+            </h2>
+          </div>
+          <!-- Rechtes Bild -->
+          <div class="w-full md:w-1/3 flex items-center justify-center h-[70%] md:h-[100%]">
+            <img src="img/about-us-person-at-table.jpeg" alt="Person at table"
+                 class="max-w-[90%] md:max-w-none md:w-auto max-h-[100%] md:max-h-[90%] rounded-lg shadow-lg">
+          </div>
+        </div>
+  
+        <!-- Folie 2 -->
+        <div class="carousel-slide flex flex-col md:flex-row w-full items-center md:justify-between gap-y-4 md:gap-x-12 h-full">
+          <!-- Linker Text -->
+          <div class="w-full md:w-2/3 px-4 text-center">
+            <h2 class="pt-4 text-2xl md:text-4xl font-mono text-center font-extralight  leading-relaxed tracking-[.15em]">
+              Lights, Camera, Passion – Shootings mit dir und deinen Produkten sind genau unser Ding
+            </h2>
+          </div>
+          <!-- Rechtes Bild -->
+          <div class="w-full md:w-1/3 flex items-center justify-center h-[60%] md:h-[100%]">
+            <img src="img/about-us-camera-setup.jpeg" alt="Camera setup"
+                 class="max-w-[90%] md:max-w-none md:w-auto max-h-[100%] md:max-h-[90%] rounded-lg shadow-lg">
+          </div>
+        </div>
+  
+        <!-- Folie 3 -->
+        <div class="carousel-slide flex flex-col md:flex-row w-full items-center md:justify-between gap-y-4 md:gap-x-12 h-full">
+          <!-- Linker Text -->
+          <div class="w-full md:w-2/3 px-4 text-center">
+            <h2 class="pt-4 text-2xl md:text-4xl font-mono text-center font-extralight  leading-relaxed tracking-[.15em]">
+              Iced Latte - always 
+            </h2>
+          </div>
+          <!-- Rechtes Bild -->
+          <div class="w-full md:w-1/3 flex items-center justify-center h-[60%] md:h-[100%]">
+            <img src="img/about-us-iced-latte.jpg" alt="iced Latte"
+                 class="max-w-[90%] md:max-w-none md:w-auto max-h-[100%] md:max-h-[90%] rounded-lg shadow-lg">
+          </div>
+        </div>
+
+
+
+        <!-- Folie 4 -->
+        <div class="carousel-slide flex flex-col md:flex-row w-full items-center md:justify-between gap-y-4 md:gap-x-12 h-full">
+          <!-- Linker Text -->
+          <div class="w-full md:w-2/3 px-4 text-center">
+            <h2 class="pt-4 text-2xl md:text-4xl font-mono text-center font-extralight  leading-relaxed tracking-[.15em]">
+              Bold Ideas Wanted - Wir lieben es, ausgefallene Visionen umzusetzen 
+            </h2>
+          </div>
+          <!-- Rechtes Bild -->
+          <div class="w-full md:w-1/3 flex items-center justify-center h-[60%] md:h-[100%]">
+            <img src="img/about-us-working-girl.jpeg" alt="iced Latte"
+                 class="max-w-[90%] md:max-w-none md:w-auto max-h-[100%] md:max-h-[90%] rounded-lg shadow-lg">
+          </div>
+        </div>
+       
+      </div>
+
+      <!-- Pfeil rechts -->
+      <button id="next-slide" class="hidden md:block absolute right-4 xl:right-16 text-4xl text-black hover:text-gray-700">
+        <img src="img/arrow.png" alt="Next Slide" class="w-16 h-6">
+      </button>
+    </div>
+  
+    <!-- Unterer weißer Balken -->
+    <div class=" h-1/6 bg-backBeige hidden md:block"></div>
+    <!-- Pfeile nur für mobile Geräte -->
+    <div class="flex justify-between items-center  w-full px-16 pb-8 -mt-6 sm:hidden">
+      <button id="prev-slide-mobile" class="text-6xl text-black hover:text-gray-700">
+        <img src="img/arrow.png" alt="Next Slide" class="w-16 h-6 transform rotate-180">
+      </button>
+      <button id="next-slide-mobile" class="text-6xl text-black hover:text-gray-700">
+        <img src="img/arrow.png" alt="Next Slide" class="w-16 h-6">
+      </button>
+    </div>
+  </div>
+  <div>test</div>
     <!-- JavaScript für die Navigation -->
     <script src="main.js"></script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const slides = document.querySelectorAll(".carousel-slide");
+        const nextButton = document.getElementById("next-slide");
+        const nextButtonMobile = document.getElementById("next-slide-mobile");
+        const prevButton = document.getElementById("prev-slide");
+        const prevButtonMobile = document.getElementById("prev-slide-mobile");
+        let currentIndex = 0;
+    
+        const updateCarousel = () => {
+          slides.forEach((slide, index) => {
+            slide.classList.add("hidden");
+            if (index === currentIndex) {
+              slide.classList.remove("hidden");
+            }
+          });
+        };
+    
+        nextButton.addEventListener("click", () => {
+          currentIndex = (currentIndex + 1) % slides.length;
+          updateCarousel();
+        });
+
+        nextButtonMobile.addEventListener("click", () => {
+          currentIndex = (currentIndex + 1) % slides.length;
+          updateCarousel();
+        });
+    
+        prevButton.addEventListener("click", () => {
+          currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+          updateCarousel();
+        });
+
+        prevButtonMobile.addEventListener("click", () => {
+          currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+          updateCarousel();
+        });
+    
+        // Initialisiere das Karussell
+        updateCarousel();
+      });
+    </script>
   </body>
 </html>
