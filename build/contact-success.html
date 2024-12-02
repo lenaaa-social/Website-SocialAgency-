@@ -79,69 +79,8 @@
     <div class="bg-backBeige flex flex-col-reverse xl:flex-row items-center p-4 xl:p-12 xl:h-screen md:p-8">
       <!-- Linke Spalte für Text -->
       <div class="w-full xl:w-7/12 p-4 xl:p-12">
-        <h2 class="text-4xl xl:text-7xl font-serif text-center font-light text-black mb-12">Lets connect</h2>
-        <form class="space-y-4" action="https://api.web3forms.com/submit" method="post">
-          <input type="hidden" name="access_key" value="93bc5d23-5d4d-48d1-98f1-c72f8f230f3a">
-          <!-- Eingabefeld für Name -->
-          <div>
-            <input 
-              type="text" 
-              placeholder="Name" 
-              name="name"
-              required
-              class="w-full p-3 border border-black focus:outline-none focus:ring-2 focus:ring-black"
-            />
-          </div>
-          <!-- Eingabefeld für Nummer -->
-          <div>
-            <input 
-              type="tel" 
-              placeholder="Nummer" 
-              name="number"
-              class="w-full p-3 border border-black focus:outline-none focus:ring-2 focus:ring-black"
-            />
-          </div>
-          <!-- Eingabefeld für Mail -->
-          <div>
-            <input 
-              type="email" 
-              placeholder="Mail" 
-              name="email"
-              required
-              class="w-full p-3 border border-black focus:outline-none focus:ring-2 focus:ring-black"
-            />
-          </div>
-          <!-- Eingabefeld für Firma/Website -->
-          <div>
-            <input 
-              type="text" 
-              name="Firma"
-              placeholder="Firma / Website / IG Account" 
-              class="w-full p-3 border border-black focus:outline-none focus:ring-2 focus:ring-black"
-            />
-          </div>
-          <!-- Eingabefeld für Nachricht -->
-          <div>
-            <textarea 
-              placeholder="Nachricht" 
-              rows="5" 
-              name="message"
-              required
-              class="w-full p-3 border border-black focus:outline-none focus:ring-2 focus:ring-black resize-none"
-            ></textarea>
-          </div>
-          <!-- Submit-Button -->
-           <!--Link unbedingt anpassen local: http://127.0.0.1:5501/build/contact-success.html#thank-you-->
-          <input type="hidden" name="redirect" value="https://lenaaa-social.github.io/Website-SocialAgency-/contact-success.html#thank-you">
-          <div class="text-center">
-            <button 
-              type="submit" 
-              class="px-8 py-3 bg-[#d1bfa9] border border-black text-black hover:bg-black hover:text-backBeige transition duration-300 uppercase tracking-wider"
-            >
-              Let’s create some magic
-            </button>
-          </div>
-        </form>
+        <h2 class="text-4xl xl:text-7xl font-serif text-center font-light text-black mb-12 hidden">Lets connect</h2>
+        <p class="text-4xl xl:text-5xl text-center leading-relaxed xl:leading-normal font-serif font-extralight" id="thank-you">Vielen Dank für deine Nachricht! <br>Wir werden uns so schnell wie möglich bei dir melden!</p>
       </div>
     
       <!-- Rechte Spalte für Bild und Rahmen -->
