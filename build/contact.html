@@ -54,16 +54,94 @@
 
     <!-- Hauptinhalt-->
     <div
-    class="bg-cover bg-center h-[80vh] sm:h-screen flex items-center justify-center relative"
-    style="background-image: url('img/discoball.jpg');"
-  >
+    class="bg-cover bg-center h-[40vh] sm:h-[60vh] flex items-center justify-center relative"
+    style="background-image: url('img/contact-landing.jpeg');">
     <!-- Überschrift zentriert -->
-    <h1 class="text-5xl md:text-8xl font-serif font-semibold tracking-wide text-black mb-16 sm:mb-0">
-      Kontakt
+    <h1 class="text-5xl uppercase md:text-8xl font-serif font-semibold tracking-wide text-black sm:mb-0">
+      Are we a fit
     </h1>
+    </div>
+    <div class="h-[60vh] sm:h-[40vh] bg-backBeige flex items-center justify-center text-center">
+      <p class="w-2/3 text-lg">Hey! Schön, dass du hier bist! <br> <br>
+
+        Du hast eine Idee, eine Frage oder brauchst frischen Wind für deinen Social-Media-Auftritt? <br>
+        Lass uns drüber sprechen – wir freuen uns darauf, dich kennenzulernen! <br> <br>
+        
+        Füll einfach alles aus und schreibe uns dein Anliegen und deine Wünsche in das entsprechende Feld. <br> <br>
+        
+        Wir freuen uns von dir zu hören! 
+        </p>
+    </div>
+
+
+
+
+    <div class="bg-backBeige flex flex-col-reverse xl:flex-row items-center p-4 xl:p-12 xl:h-screen md:p-8">
+      <!-- Linke Spalte für Text -->
+      <div class="w-full xl:w-7/12 p-4 xl:p-12">
+        <h2 class="text-4xl xl:text-7xl font-serif text-center font-light text-black mb-12">Lets connect</h2>
+        <form class="space-y-4">
+          <!-- Eingabefeld für Name -->
+          <div>
+            <input 
+              type="text" 
+              placeholder="Name" 
+              class="w-full p-3 border border-black focus:outline-none focus:ring-2 focus:ring-black"
+            />
+          </div>
+          <!-- Eingabefeld für Nummer -->
+          <div>
+            <input 
+              type="text" 
+              placeholder="Nummer" 
+              class="w-full p-3 border border-black focus:outline-none focus:ring-2 focus:ring-black"
+            />
+          </div>
+          <!-- Eingabefeld für Mail -->
+          <div>
+            <input 
+              type="email" 
+              placeholder="Mail" 
+              class="w-full p-3 border border-black focus:outline-none focus:ring-2 focus:ring-black"
+            />
+          </div>
+          <!-- Eingabefeld für Firma/Website -->
+          <div>
+            <input 
+              type="text" 
+              placeholder="Firma / Website / IG Account" 
+              class="w-full p-3 border border-black focus:outline-none focus:ring-2 focus:ring-black"
+            />
+          </div>
+          <!-- Eingabefeld für Nachricht -->
+          <div>
+            <textarea 
+              placeholder="Nachricht" 
+              rows="5" 
+              class="w-full p-3 border border-black focus:outline-none focus:ring-2 focus:ring-black resize-none"
+            ></textarea>
+          </div>
+          <!-- Submit-Button -->
+          <div class="text-center">
+            <button 
+              type="submit" 
+              class="px-8 py-3 bg-[#d1bfa9] border border-black text-black hover:bg-black hover:text-white transition duration-300 uppercase tracking-wider"
+            >
+              Let’s create some magic
+            </button>
+          </div>
+        </form>
+      </div>
     
-    <!-- Untertitel in der rechten unteren Ecke -->
-  </div>
+      <!-- Rechte Spalte für Bild und Rahmen -->
+      <div class="relative w-full xl:w-5/12 h-[50vh] sm:h-[60vh] xl:h-[100%] flex items-start justify-start xl:justify-center xl:items-center mb-8 xl:mb-0">
+        <!-- Rahmen oben rechts in der linken Spalte -->
+        <div class="animated-appear opacity-0 md:mx-8 xl:mx-0 absolute top-6 right-6 xl:bottom-6 xl:left-16 h-[80%] w-[75%] xl:w-[75%] xl:h-[80%] border-[2.5px] sm:border-[3.5px] border-black transform z-0"></div>
+        
+        <!-- Bild unten links in der linken Spalte -->
+        <img src="img/contact-profile-picture.jpeg" alt="Bild" class="md:mx-8 xl:mx-0 absolute bottom-6 left-6 w-[75%] h-[80%] xl:top-16 xl:right-16 object-cover">
+      </div>
+    </div>
 
 
     <!-- JavaScript für die Navigation -->
