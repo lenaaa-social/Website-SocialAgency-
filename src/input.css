@@ -5,7 +5,7 @@
 /*add own css classes below */
   @keyframes slideIn {
     from {
-      transform: translateX(60%);
+      transform: translateX(10%);
       opacity: 0;
     }
     to {
@@ -15,7 +15,7 @@
   }
 
   .slide-in {
-    animation: slideIn 0.8s ease-out forwards;
+    animation: slideIn 1.0s ease-out forwards;
   }
 
   @keyframes appear {
