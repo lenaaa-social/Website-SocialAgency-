@@ -107,7 +107,7 @@
 }
 
 /*
-! tailwindcss v3.4.15 | MIT License | https://tailwindcss.com
+! tailwindcss v3.4.16 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -604,8 +604,8 @@ video {
   inset: 0px;
 }
 
-.bottom-24 {
-  bottom: 6rem;
+.bottom-12 {
+  bottom: 3rem;
 }
 
 .bottom-6 {
@@ -622,10 +622,6 @@ video {
 
 .right-0 {
   right: 0px;
-}
-
-.right-10 {
-  right: 2.5rem;
 }
 
 .right-4 {
@@ -710,12 +706,12 @@ video {
   margin-top: 1rem;
 }
 
-.mt-8 {
-  margin-top: 2rem;
+.mt-6 {
+  margin-top: 1.5rem;
 }
 
-.mt-0 {
-  margin-top: 0px;
+.mt-8 {
+  margin-top: 2rem;
 }
 
 .block {
@@ -772,6 +768,10 @@ video {
 
 .h-5\/6 {
   height: 83.333333%;
+}
+
+.h-56 {
+  height: 14rem;
 }
 
 .h-6 {
@@ -895,8 +895,8 @@ video {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.rotate-\[-10deg\] {
-  --tw-rotate: -10deg;
+.rotate-\[-3deg\] {
+  --tw-rotate: -3deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -1167,11 +1167,6 @@ video {
   padding-bottom: 0.75rem;
 }
 
-.py-4 {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
@@ -1185,6 +1180,14 @@ video {
   padding-bottom: 0.5rem;
 }
 
+.pb-24 {
+  padding-bottom: 6rem;
+}
+
+.pb-4 {
+  padding-bottom: 1rem;
+}
+
 .pb-8 {
   padding-bottom: 2rem;
 }
@@ -1193,16 +1196,20 @@ video {
   padding-top: 1rem;
 }
 
-.pt-0 {
-  padding-top: 0px;
-}
-
 .text-center {
   text-align: center;
 }
 
 .text-start {
   text-align: start;
+}
+
+.font-dancing-script {
+  font-family: Dancing-Script;
+}
+
+.font-ephesis {
+  font-family: Ephesis;
 }
 
 .font-mono {
@@ -1235,6 +1242,11 @@ video {
 
 .text-6xl {
   font-size: 3.75rem;
+  line-height: 1;
+}
+
+.text-7xl {
+  font-size: 4.5rem;
   line-height: 1;
 }
 
@@ -1278,10 +1290,6 @@ video {
   font-weight: 600;
 }
 
-.font-thin {
-  font-weight: 100;
-}
-
 .uppercase {
   text-transform: uppercase;
 }
@@ -1300,10 +1308,6 @@ video {
 
 .tracking-\[\.15em\] {
   letter-spacing: .15em;
-}
-
-.tracking-tighter {
-  letter-spacing: -0.05em;
 }
 
 .tracking-wide {
@@ -1397,6 +1401,26 @@ video {
 }
 
 /*add own css classes below */
+
+@font-face {
+  font-family: 'Ephesis';
+
+  size-adjust: 200%;
+
+  src: local('ephesis'), url(../fonts/Ephesis/Ephesis-Regular.ttf) format('truetype');
+
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: 'Dancing-Script';
+
+  size-adjust: 150%;
+
+  src: local('dancing_script'), url(../fonts/Dancing-Script/DancingScript-VariableFont_wght.ttf) format('truetype');
+
+  font-weight: 900;
+}
 
 @keyframes slideIn {
   from {
@@ -1497,8 +1521,12 @@ video {
 }
 
 @media (min-width: 640px) {
-  .sm\:bottom-52 {
-    bottom: 13rem;
+  .sm\:bottom-56 {
+    bottom: 14rem;
+  }
+
+  .sm\:right-12 {
+    right: 3rem;
   }
 
   .sm\:mb-0 {
@@ -1511,6 +1539,10 @@ video {
 
   .sm\:hidden {
     display: none;
+  }
+
+  .sm\:h-72 {
+    height: 18rem;
   }
 
   .sm\:h-\[40vh\] {
@@ -1576,6 +1608,10 @@ video {
     padding-right: 2rem;
   }
 
+  .sm\:pb-8 {
+    padding-bottom: 2rem;
+  }
+
   .sm\:pl-0 {
     padding-left: 0px;
   }
@@ -1596,6 +1632,11 @@ video {
 
   .sm\:text-6xl {
     font-size: 3.75rem;
+    line-height: 1;
+  }
+
+  .sm\:text-7xl {
+    font-size: 4.5rem;
     line-height: 1;
   }
 
@@ -1713,24 +1754,15 @@ video {
     font-size: 6rem;
     line-height: 1;
   }
-
-  .md\:text-xl {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
-  }
 }
 
 @media (min-width: 1024px) {
-  .lg\:h-screen {
-    height: 100vh;
+  .lg\:-mt-24 {
+    margin-top: -6rem;
   }
 
-  .lg\:h-\[90vh\] {
-    height: 90vh;
-  }
-
-  .lg\:h-\[screen\] {
-    height: screen;
+  .lg\:h-\[80vh\] {
+    height: 80vh;
   }
 
   .lg\:w-1\/2 {
@@ -1898,6 +1930,10 @@ video {
 }
 
 @media (min-width: 1536px) {
+  .\32xl\:mt-6 {
+    margin-top: 1.5rem;
+  }
+
   .\32xl\:px-24 {
     padding-left: 6rem;
     padding-right: 6rem;

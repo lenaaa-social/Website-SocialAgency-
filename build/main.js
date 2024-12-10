@@ -59,3 +59,4 @@ document.addEventListener("DOMContentLoaded", function () {
   const animatedElements = document.querySelectorAll(".animated-appear");
   animatedElements.forEach((el) => observer.observe(el));
 });
+

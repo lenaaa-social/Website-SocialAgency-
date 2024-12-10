@@ -3,6 +3,21 @@
 @tailwind utilities;
 
 /*add own css classes below */
+
+  @font-face {
+    font-family: 'Ephesis';
+    size-adjust: 200%;
+    src: local('ephesis'), url(../fonts/Ephesis/Ephesis-Regular.ttf) format('truetype');
+    font-weight: 900;
+  }
+
+  @font-face {
+    font-family: 'Dancing-Script';
+    size-adjust: 150%;
+    src: local('dancing_script'), url(../fonts/Dancing-Script/DancingScript-VariableFont_wght.ttf) format('truetype');
+    font-weight: 900;
+  }
+
   @keyframes slideIn {
     from {
       transform: translateX(10%);
