@@ -1474,6 +1474,10 @@ video {
   line-height: 1.5rem;
 }
 
+.leading-loose {
+  line-height: 2;
+}
+
 .tracking-\[\.15em\] {
   letter-spacing: .15em;
 }
